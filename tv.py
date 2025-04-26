@@ -7,6 +7,9 @@ class TV:
     
     def turnOn(self): # turn the tv on
         self.on = True
+        print("turn on")
     
     def turnOff(self): # turn the tv off
         self.on = False
+        print("turn off")
+    
