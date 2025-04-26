@@ -7,9 +7,16 @@ class TV:
     
     def turnOn(self): # turn the tv on
         self.on = True
-        print("turn on")
+        print("turn on") # checking
     
     def turnOff(self): # turn the tv off
         self.on = False
-        print("turn off")
+        print("turn off") # checking
     
+    def getChannel(self): # return the current channel
+        return self.channel
+    
+    def setChannel(self, channel): # if the tv is on, set the channel number
+        if self.on and 1 <= channel <= 120:
+            self.channel = channel
+            print(channel) # checking
