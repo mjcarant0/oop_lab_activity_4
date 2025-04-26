@@ -4,3 +4,9 @@ class TV:
         self.channel = channel
         self.volumeLevel = volumeLevel
         self.on = on
+    
+    def turnOn(self): # turn the tv on
+        self.on = True
+    
+    def turnOff(self): # turn the tv off
+        self.on = False
