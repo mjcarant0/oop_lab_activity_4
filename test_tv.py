@@ -12,5 +12,9 @@ def main():
     tv2.setChannel(3) # setting the channel
     tv2.setVolume(2) # setting the volume level
 
+    # print each tv's info
+    print(f"tv1's channel is {tv1.getChannel()} and volume level is {tv1.getVolume()}")
+    print(f"tv2's channel is {tv2.getChannel()} and volume level is {tv2.getVolume()}")
+    
 if __name__ == "__main__": # ensures it's working
     main()
