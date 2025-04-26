@@ -20,3 +20,11 @@ class TV:
         if self.on and 1 <= channel <= 120:
             self.channel = channel
             print(channel) # checking
+    
+    def getVolume(self): # return the current volume
+        return self.volumeLevel
+    
+    def setVolume(self, volumeLevel): # if the tv is on, set the volume level
+        if self.on and 1 <= volumeLevel <= 7:
+            self.volumeLevel = volumeLevel
+            print(volumeLevel) # check
